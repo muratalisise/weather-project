@@ -18,10 +18,24 @@
     <div class="container">
       <div class="card">
         <div class="header">
-          <span class="city"></span>
+          <!--<span class="city"></span>-->
+          <h1 class="weather-title">İl ve İlçe Hava Durumu</h1>
+          <div class="select-box">
+            <select class="form-select" id="city">
+              <option value="">İl Seçiniz</option>
+            </select>
+            <select class="form-select" id="district">
+              <option value="" disabled>İlçe Seçiniz</option>
+            </select>
+          </div>
           <div class="daily-weather">
             <span class="degree"></span>
-            <img class="image" id="image" src="" alt="" />
+            <img
+              class="image"
+              id="image"
+              src="./gif/icons8-cloud-64.png"
+              alt=""
+            />
             <p class="weather-description"></p>
           </div>
           <div class="weather-details">
@@ -41,7 +55,10 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=kendi keyimiz" type="text/javascript"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=kendi keyimiz"
+      type="text/javascript"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
